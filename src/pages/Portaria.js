@@ -19,7 +19,16 @@ function Portaria() {
         });
         setTimeout(function() {
             doc.addImage(document.getElementById("canvasID"), 'png', 0, 0, width, height);
-            doc.save("teste.pdf");
+            doc.save(
+                "PORTARIA " +
+                numeroPortaria + " " +
+                diaPortaria + " " +
+                mesPortaria + " " +
+                anoPortaria +
+                " DIARIA " +
+                nome +
+                ".pdf"
+            );
             event.preventDefault();
             window.location.reload();
         }, 1200);
@@ -179,7 +188,7 @@ function Portaria() {
                     <label>Cargo:</label>
                     <input type="text" onChange={
                         (event) => {
-                            setCargo(event.target.value.toUpperCase());
+                            setCargo(event.target.value);
                         }
                     }/>
                     <label>Temporal da Viagem:</label>
@@ -283,7 +292,7 @@ function Portaria() {
                             <br/>
                         </p>
                         <p>
-                        <strong>Art. 2º.</strong> Em consequência, conceder-lhe {diarias} ({diariasExtenso}) {tipoDiaria}
+                        <strong>Art. 2º.</strong> Em consequência, conceder-lhe {diarias} ({diariasExtenso}) {tipoDiaria}&ensp;
                             à razão de R$ {valorDiaria},00 ({numero.porExtenso(valorDiaria, numero.estilo.monetario)})
                             perfazendo um total de R$ {valorDiaria * parseInt(diarias)},00
                             ({numero.porExtenso(valorDiaria * diarias, numero.estilo.monetario)}), tendo
@@ -321,5 +330,4 @@ function Portaria() {
         </div>
     );
 }
-
 export default Portaria;
