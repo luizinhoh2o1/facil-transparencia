@@ -21,7 +21,9 @@ function Portaria() {
             doc.addImage(document.getElementById("canvasID"), 'png', 0, 0, width, height);
             doc.save("teste.pdf");
             event.preventDefault();
+            window.location.reload();
         }, 1200);
+        
     }
 
     const meses = [
