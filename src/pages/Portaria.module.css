@@ -1,0 +1,66 @@
+.page {
+    column-count: 2;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.layerForm {
+    padding-top: 1rem;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem 2rem;
+    width: 28rem;
+    background-color: #afafaf;
+    font-weight: bold;
+}
+
+.a4 {
+    width: 210mm;
+    height: 297mm;
+    background-color: white;
+    font-family: "Times New Roman", Times, serif;
+}
+
+p {
+    line-height: 1.5;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.portaria {
+    font-weight: bold;
+    transform: translateX(25mm) translateY(27mm);
+}
+
+.subtitulo {
+    padding-left: 110mm;
+    font-weight: bold;
+    transform: translateY(32mm);
+}
+
+.corpoDoTexto {
+    padding: 40mm 25mm;
+    text-indent: 7rem;
+    width: 165mm;
+    margin-top: 2rem;
+}
+
+.alignCenter p{
+    text-indent: 0;
+    text-align: center;
+}
+
+canvas {
+    display: none;
+}
+
+button {
+    margin-top: 1rem;
+    width: 25rem;
+    height: 2rem;
+}

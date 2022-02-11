@@ -1,0 +1,23 @@
+.navBar {
+    display: flex;
+    justify-content: center;
+    padding-top: 2%;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #f5f5f5;
+    color: #000000;
+    cursor: pointer;
+    transition: 0.5s;
+    width: 6rem;
+    padding: 1rem;
+    box-shadow: 0 5px 10px black;
+}
+
+a:hover {
+    background-color: #afafaf;
+    box-shadow: 0 5px 10px #002424;
+}
+
