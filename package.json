@@ -1,10 +1,10 @@
 {
-  "name": "pdf-template",
+  "name": "facil-transparencia",
   "version": "0.1.0",
   "private": true,
   "engines": {
-    "npm": "8.1.2",
-    "node": "16.13.2"
+    "npm": "8.x",
+    "node": "16.x"
   },
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.2",
