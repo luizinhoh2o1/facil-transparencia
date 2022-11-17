@@ -138,8 +138,8 @@ function Portaria() {
                         }
                     }>
                         <option value=""></option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
+                        <option value="01">1</option>
+                        <option value="02">2</option>
                     </select>
                     <label>Tipo de diária:</label>
                     <select name="tipo-diaria" onChange={
