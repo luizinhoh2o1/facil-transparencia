@@ -177,7 +177,6 @@ function Portaria() {
                             <option value=""></option>
                             <option value="Sr.">Sr.</option>
                             <option value="Sra.">Sra.</option>
-                            <option value="Srta.">Srta.</option>
                         </select>
                         <input type="text" onChange={
                             (event) => {
@@ -245,11 +244,18 @@ function Portaria() {
                         </>
                     }
                     <label>Orgão de interesse:</label>
-                    <input type="text" onChange={
+                    <select name="orgao" onClick={
                         (event) => {
                             setOrgaoDeInteresse(event.target.value);
                         }
-                    }/>
+                    }>
+                        <option value=""></option>
+                        <option value=" Prefeitura Municipal de Varjão.">Prefeitura Municipal de Varjão</option>
+                        <option value=" Secretaria Municipal de Saúde.">Secretaria Municipal de Saúde</option>
+                        <option value=" Secretaria Municipal de Assistência Social.">Secretaria Municipal de Assistência Social</option>
+                        <option value=" Secretaria Municipal de Educação e Cultura.">Secretaria Municipal de Educação e Cultura</option>
+                        <option value=" Secretaria Municipal de Meio Ambiente e Turismo.">Secretaria Municipal de Educação e Cultura</option>
+                    </select>
                     <label>Valor da diária:</label>
                     <input type="number" onChange={
                         (event) => {
