@@ -199,11 +199,11 @@ function Portaria() {
                     }>
                         <option value=""></option>
                         <option value=" em virtude de uma viagem realizada ">Em virtude (singular)</option>
-                        <option value=" dispôs a realizar uma viagem ">Dispôs (singular)</option>
-                        <option value=" dispõe a realizar uma viagem ">Dispõe (singular)</option>
+                        <option value=" que dispôs a realizar uma viagem ">Dispôs (singular)</option>
+                        <option value=" que dispõe a realizar uma viagem ">Dispõe (singular)</option>
                         <option value=" em virtude das viagens realizadas ">Em virtude (plural)</option>
-                        <option value=" dispôs a realizar viagens ">Dispôs (plural)</option>
-                        <option value=" dispõe a realizar viagens ">Dispõe (plural)</option>
+                        <option value=" que dispôs a realizar viagens ">Dispôs (plural)</option>
+                        <option value=" que dispõe a realizar viagens ">Dispõe (plural)</option>
                     </select>
                     <label>Destino:</label>
                     <input type="text" onChange={
@@ -285,7 +285,7 @@ function Portaria() {
                         </p>
                         <p>
                         <strong>Art. 1º.</strong> Determinar o pagamento de {diarias} ({diariasExtenso}) {tipoDiaria} {tratamentoA_AO}
-                        <strong> {tratamentoPessoa} {nome}</strong>, ocupante do cargo de {cargo}, que
+                        <strong> {tratamentoPessoa} {nome}</strong>, ocupante do cargo de {cargo}, 
                             {temporalViagem} à cidade de {destino},&ensp;
                             {singularPluralDiasViagem} {diaViagem} de {mesViagem} de {anoViagem}{dataSegundaViagem}, para
                             tratar de assuntos do interesse da {orgaoDeInteresse}.
