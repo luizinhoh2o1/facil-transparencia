@@ -250,11 +250,11 @@ function Portaria() {
                         }
                     }>
                         <option value=""></option>
-                        <option value=" Prefeitura Municipal de Varjão.">Prefeitura Municipal de Varjão</option>
-                        <option value=" Secretaria Municipal de Saúde.">Secretaria Municipal de Saúde</option>
-                        <option value=" Secretaria Municipal de Assistência Social.">Secretaria Municipal de Assistência Social</option>
-                        <option value=" Secretaria Municipal de Educação e Cultura.">Secretaria Municipal de Educação e Cultura</option>
-                        <option value=" Secretaria Municipal de Meio Ambiente e Turismo.">Secretaria Municipal de Educação e Cultura</option>
+                        <option value=" Prefeitura Municipal de Varjão">Prefeitura Municipal de Varjão</option>
+                        <option value=" Secretaria Municipal de Saúde">Secretaria Municipal de Saúde</option>
+                        <option value=" Secretaria Municipal de Assistência Social">Secretaria Municipal de Assistência Social</option>
+                        <option value=" Secretaria Municipal de Educação e Cultura">Secretaria Municipal de Educação e Cultura</option>
+                        <option value=" Secretaria Municipal de Meio Ambiente e Turismo">Secretaria Municipal de Educação e Cultura</option>
                     </select>
                     <label>Valor da diária:</label>
                     <input type="number" onChange={
