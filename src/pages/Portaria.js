@@ -114,12 +114,12 @@ function Portaria() {
                     <select type="number" onChange={
                         (event) => {
                             setDiarias(event.target.value);
-                            if (event.target.value === "01") {
+                            if (event.target.value === "1") {
                                 setDiariasExtenso("uma");
                                 setSingularPluralDiasViagem("no dia:");
                                 setDataSegundaViagem("");
                             } else {
-                                if (event.target.value === "02") {
+                                if (event.target.value === "2") {
                                     setDiariasExtenso("duas");
                                     setSingularPluralDiasViagem("nos dias:");
                                     setDataSegundaViagem("");
@@ -128,8 +128,8 @@ function Portaria() {
                         }
                     }>
                         <option value=""></option>
-                        <option value="01">1</option>
-                        <option value="02">2</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
                     </select>
                     <label>Tipo de diária:</label>
                     <select name="tipo-diaria" onChange={
@@ -290,7 +290,7 @@ function Portaria() {
                             <strong>RESOLVE:</strong>
                         </p>
                         <p>
-                        <strong>Art. 1º.</strong> Determinar o pagamento de {diarias} ({diariasExtenso}) {tipoDiaria} {tratamentoA_AO}
+                        <strong>Art. 1º.</strong> Determinar o pagamento de 0{diarias} ({diariasExtenso}) {tipoDiaria} {tratamentoA_AO}
                         <strong> {tratamentoPessoa} {nome}</strong>, ocupante do cargo de {cargo}, 
                             {temporalViagem} à cidade de {destino},&ensp;
                             {singularPluralDiasViagem} {diaViagem} de {mesViagem} de {anoViagem}{dataSegundaViagem}, para
@@ -298,7 +298,7 @@ function Portaria() {
                             <br/>
                         </p>
                         <p>
-                        <strong>Art. 2º.</strong> Em consequência, conceder-lhe {diarias} ({diariasExtenso}) {tipoDiaria}&ensp;
+                        <strong>Art. 2º.</strong> Em consequência, conceder-lhe 0{diarias} ({diariasExtenso}) {tipoDiaria}&ensp;
                             à razão de R$ {valorDiaria},00 ({numero.porExtenso(valorDiaria, numero.estilo.monetario)})
                             perfazendo um total de R$ {valorDiaria * parseInt(diarias)},00
                             ({numero.porExtenso(valorDiaria * diarias, numero.estilo.monetario)}), tendo
