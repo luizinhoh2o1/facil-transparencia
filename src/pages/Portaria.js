@@ -205,11 +205,21 @@ function Portaria() {
                         <option value=" que dispõe a realizar viagens ">Dispõe (plural)</option>
                     </select>
                     <label>Destino:</label>
-                    <input type="text" onChange={
+                    <select name="destino" onClick={
                         (event) => {
                             setDestino(event.target.value);
                         }
-                    }/>
+                    }>
+                        <option value=""></option>
+                        <option value=" Goiânia-GO">Goiânia-GO</option>
+                        <option value=" Trindade-GO">Trindade-GO</option>
+                        <option value=" Palmeiras de Goiás">Palmeiras de Goiás</option>
+                        <option value=" Cezarina-GO">Cezarina-GO</option>
+                        <option value=" Indiara-GO">Indiara-GO</option>
+                        <option value=" Abadia de Goiás">Abadia de Goiás</option>
+                        <option value=" Anápolis-GO">Anápolis-GO</option>
+                        <option value=" Guapó-GO">Guapó-GO</option>
+                    </select>
                     <label>Dia de diária:</label>
                     {diarias === "" &&
                         <input type="date" disabled/>
