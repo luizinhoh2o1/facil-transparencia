@@ -84,16 +84,6 @@ function Portaria() {
                                 setNumeroPortaria(event.target.value);
                             }
                         }/>
-                        <span>/</span>
-                        <select name="ano" onChange={
-                            (event) => {
-                                setAnoPortaria(event.target.value)
-                            }
-                        }>
-                            <option value=""></option>
-                            <option value="2022">2022</option>
-                            <option value="2023">2023</option>
-                        </select>
                     </div>
                     <label>Data da Portaria:</label>
                     <input type="date" onChange={
@@ -124,12 +114,12 @@ function Portaria() {
                     <select type="number" onChange={
                         (event) => {
                             setDiarias(event.target.value);
-                            if (event.target.value === "1") {
+                            if (event.target.value === "01") {
                                 setDiariasExtenso("uma");
                                 setSingularPluralDiasViagem("no dia:");
                                 setDataSegundaViagem("");
                             } else {
-                                if (event.target.value === "2") {
+                                if (event.target.value === "02") {
                                     setDiariasExtenso("duas");
                                     setSingularPluralDiasViagem("nos dias:");
                                     setDataSegundaViagem("");
@@ -284,7 +274,7 @@ function Portaria() {
             <div>
                 <div id="screenA4" className={styles.a4}>
                     <p className={styles.portaria}>
-                        PORTARIA N° {numeroPortaria}/{anoPortaria}, DE {diaPortaria} DE {mesPortaria} DE {anoDocumentoPortaria}.
+                        PORTARIA N° {numeroPortaria}/{anoDocumentoPortaria}, DE {diaPortaria} DE {mesPortaria} DE {anoDocumentoPortaria}.
                     </p>
                     <p className={styles.subtitulo}>
                         “Concede diárias para viagens, e da outras <br/>providências”.
