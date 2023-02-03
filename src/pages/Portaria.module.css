@@ -1,15 +1,11 @@
 .page {
     column-count: 2;
     display: flex;
-    justify-content: space-between;
-    padding: 1rem;
+    justify-content: center;
+    
 }
 
-.layerForm {
-    padding-top: 1rem;
-}
-
-form{
+form {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -17,6 +13,18 @@ form{
     width: 28rem;
     background-color: #3d989b;
     font-weight: bold;
+    margin-right: 1rem;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+
+form select {
+    margin-right: 0.3rem;
+}
+
+form input {
+    height: 1.1rem;
+    padding-left: 0.3rem;
 }
 
 .a4 {
@@ -63,4 +71,12 @@ button {
     margin-top: 1rem;
     width: 25rem;
     height: 2rem;
+}
+
+@media (max-width: 1280px) {
+    .page {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+    }
 }

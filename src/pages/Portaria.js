@@ -24,7 +24,7 @@ function Portaria() {
                 numeroPortaria + " " +
                 diaPortaria + " " +
                 mesPortaria + " " +
-                anoPortaria +
+                anoDocumentoPortaria +
                 " DIARIA " +
                 nome +
                 ".pdf"
@@ -51,7 +51,6 @@ function Portaria() {
     ];
 
     const [numeroPortaria, setNumeroPortaria] = useState('');
-    const [anoPortaria, setAnoPortaria] = useState('');
     const [diaPortaria, setDiaPortaria] = useState('');
     const [mesPortaria, setMesPortaria] = useState('');
     const [anoDocumentoPortaria, setAnoDocumentoPortaria] = useState('');
@@ -74,8 +73,8 @@ function Portaria() {
     const [temporalViagem, setTemporalViagem] = useState('');
 
     return(
-        <div className={styles.page}>
-            <div className={styles.layerForm}>
+        <body className={styles.page}>
+            <div>
                 <form>
                     <label>Número da Portaria:</label>
                     <div>
@@ -271,6 +270,8 @@ function Portaria() {
                     </button>
                 </form>
             </div>
+
+
             <div>
                 <div id="screenA4" className={styles.a4}>
                     <p className={styles.portaria}>
@@ -333,7 +334,7 @@ function Portaria() {
                     </div>
                 </div>
             </div>
-        </div>
+        </body>
     );
 }
 export default Portaria;

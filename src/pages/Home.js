@@ -4,10 +4,8 @@ import styles from './Home.module.css';
 
 function Home() {
     return(
-        <div className={styles}>
-            <div className={styles.navBar}>
-                <Link to="/portaria">Portaria</Link>
-            </div>
+        <div className={styles.navBar}>
+            <Link to="/portaria" className={styles.buttons}>Portaria</Link>
         </div>
     );
 }
