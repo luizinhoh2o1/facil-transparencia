@@ -281,11 +281,10 @@ function Portaria() {
                         “Concede diárias para viagens, e da outras <br/>providências”.
                     </p>
                     <div className={styles.corpoDoTexto}>
-                        <p>
-                            <strong>O PREFEITO MUNICIPAL DE VARJÃO</strong>, Estado de Goiás,
-                            no uso de suas <br/>atribuições legais, e tendo em vista
-                            o que dispõe o Decreto nº 82A /21 de 2 de fevereiro de 2021.
-                            <br/>
+                        <p>                            
+                            <strong>A SECRETÁRIA MUNICIPAL DE ADMINISTRAÇÃO</strong>,
+                            no uso de suas atribuições legais conferidas pela Constituição Federal,
+                            Constituição do Estado de Goiás e na Lei Orgânica do Município de Varjão-Go;
                         </p>
                         <p>
                             <strong>RESOLVE:</strong>
@@ -318,17 +317,15 @@ function Portaria() {
                         </p>
                         <div className={styles.alignCenter}>
                             <p>
-                                <br/><br/><br/>
-                                <strong>PUBLIQUE-SE. DÊ-SE CIÊNCIA. CUMPRA-SE.</strong>
+                                <br/><br/>
+                                <strong>PUBLIQUE-SE. DÊ-SE CIÊNCIA. CUMPRA-SE.</strong><br/>
+                                Varjão-Goiás, {dataRodape}.
                             </p>
                             <p>
-                                Gabinete do Prefeito Municipal de Varjão, {dataRodape}.
-                            </p>
-                            <p>
-                                <br/><br/><br/>
+                                <br/><br/>
                                 ________________________________________________<br/>
-                                <strong>Rafael Pereira Machado Franco</strong><br/>
-                                <strong>Prefeito Municipal</strong><br/>
+                                <strong>VIVIANE LOURDES SOUZA LUIZ PEREIRA</strong><br/>
+                                <strong>Secretária Municipal de Administração</strong><br/>
                             </p>
                         </div>
                     </div>
