@@ -274,6 +274,7 @@ function Portaria() {
 
             <div>
                 <div id="screenA4" className={styles.a4}>
+                    <br/>
                     <p className={styles.portaria}>
                         PORTARIA N° {numeroPortaria}/{anoDocumentoPortaria}, DE {diaPortaria} DE {mesPortaria} DE {anoDocumentoPortaria}.
                     </p>
