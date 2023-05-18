@@ -207,7 +207,9 @@ function Portaria() {
                         <option value=" Indiara-GO">Indiara-GO</option>
                         <option value=" Abadia de Goiás">Abadia de Goiás</option>
                         <option value=" Anápolis-GO">Anápolis-GO</option>
-                        <option value=" Guapó-GO">Guapó-GO</option>
+                        <option value=" Brasília-DF">Brasília-DF</option>
+                        <option value=" Edéia-GO">Edéia-GO</option>
+                        <option value=" Anápolis-GO">Anápolis-GO</option>
                     </select>
                     <label>Dia de diária:</label>
                     {diarias === "" &&
